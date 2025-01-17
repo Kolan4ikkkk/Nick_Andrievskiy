@@ -1,7 +1,11 @@
 # Declare and write the body of the function named `my_len`.
 # This function should accept an Iterable as a parameter
 # and return its length
+from typing import Iterable
 
+def my_len(iterable: Iterable) -> int:
+    print(len(iterable))
+    return len(iterable)
 
 # Do not change the below's code
 if __name__ == "__main__":
