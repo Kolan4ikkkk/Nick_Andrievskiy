@@ -1,6 +1,6 @@
 # Write the body of the function to make the script work without errors
 def largest_of_three(a: int, b: int, c: int) -> int:
-    pass
+    return max(a, b, c)
 
 
 if __name__ == "__main__":
@@ -8,3 +8,6 @@ if __name__ == "__main__":
     assert largest_of_three(1, 2, 3) == 3
     assert largest_of_three(10, 5, 7) == 10
     assert largest_of_three(-1, -2, -3) == -1
+    print(largest_of_three(1, 2, 3))   
+    print(largest_of_three(10, 5, 7))  
+    print(largest_of_three(-1, -2, -3)) 
