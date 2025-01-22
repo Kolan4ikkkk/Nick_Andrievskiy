@@ -3,7 +3,12 @@
 #
 # Return `True` is character is present. Return `False` otherwise
 def has_char(s: str, c: str) -> bool:
-    pass
+    for char in s:
+        if char == c:
+            print(True)
+            return True
+        print(False)
+    return False
 
 
 # Do not change the below's code
