@@ -4,7 +4,8 @@ if __name__ == "__main__":
 
     # Modify the value of variable `c` using
     # list `l` to make the script work without errors
-    c = None
+    c = sum(l)
+    print(c)
 
     # Do not change the below's code
     assert c == 10
