@@ -3,7 +3,16 @@
 #
 # Return `None`, if list is empty
 def find_max(l: list[int]) -> int | None:
-    pass
+    if not l:
+        print(None)
+        return None
+
+    max_value = l[0]
+    for num in l:
+        if num > max_value:
+            max_value = num
+            print(max_value)
+    return max_value
 
 
 # Do not change the below's code
