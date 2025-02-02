@@ -9,7 +9,9 @@
 # For example,
 # take("abcd", 2, True) -> "cd"
 def take(s: str, n: int, last: bool = False) -> str:
-    pass
+    if n <= 0:
+        return ""
+    return s[-n:] if last else s[:n]
 
 
 # Do not change the below's code
