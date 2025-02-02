@@ -2,7 +2,8 @@
 # string `s` contains character `char`
 # and False otherwise
 def contains_char(s: str, char: str) -> bool:
-    pass
+     print(char in s)
+     return char in s
 
 
 # Do not change the below's code
