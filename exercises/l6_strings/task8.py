@@ -1,7 +1,8 @@
 # Write a function that formats a string
 # a specific way that passes tests
 def you_are(s: str) -> str:
-    pass
+    print(f"You are {s}")
+    return f"You are {s}"
 
 
 # Do not change the below's code
