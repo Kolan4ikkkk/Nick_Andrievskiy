@@ -5,7 +5,8 @@ from typing import Any
 # NOTE: the function should create a new dictionary. Do not modify dictionaries
 # passed to the function as arguments
 def merge(d1: dict[Any, Any], d2: dict[Any, Any]) -> dict[Any, Any]:
-    pass
+    print({**d1, **d2})
+    return {**d1, **d2}
 
 
 # Do not change the below's code
