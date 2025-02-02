@@ -1,7 +1,8 @@
 # Write a body of the function to make it
 # return a max value of dictionary `d`
 def max_value(d: dict[str, int]) -> int:
-    pass
+    print(max(d.values()))
+    return max(d.values())
 
 
 # Do not change the below's code
