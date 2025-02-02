@@ -6,7 +6,8 @@ from typing import Any
 # It is guaranteed that all elements from list `l`
 # can be converted to string
 def proxy_join(l: list[Any]) -> str:
-    pass
+    print(", ".join(map(str, l)))
+    return ", ".join(map(str, l))
 
 
 # Do not change the below's code
