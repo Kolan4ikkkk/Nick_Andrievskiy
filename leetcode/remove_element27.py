@@ -25,6 +25,19 @@ class Solution:
         return k
 
 
+class Solution:
+    def removeElement(self, nums, val):
+        """
+        :type nums: List[int]
+        :type val: int
+        :rtype: int
+        """
+        while val in nums:  # O(n)
+            nums.remove(val)  # O(n)
+        # O(n^2)
+        return len(nums)  # O(1)
+
+
 def sort(): ...
 
 
@@ -55,8 +68,15 @@ def msqr(l: list[int]):
 
 if __name__ == "__main__":
     nums = [0, 0, 0, 0, 0]
+    print(nums[3])  # O(1)
+
+    # i * size + base_ptr
+
+    # Now nums has 1,000,000
+    print(nums[300_000])  # O(1)
     val = 43
     # print(Solution().removeElement(nums, val))
     # print(nums)
     l = [2, 2, 3]
+    nums.insert(2, 10)  # O(n)
     msqr(l)
