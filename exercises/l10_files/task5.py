@@ -9,7 +9,11 @@ L10_PATH = Path(__file__).parent
 #
 # HINT. Don't forget to close file
 def read(path: Path) -> str:
-    pass
+     with open(path, "r") as file:
+        content = file.read()
+        file.close
+        print(content)
+     return content
 
 
 # Do not modify the code below
