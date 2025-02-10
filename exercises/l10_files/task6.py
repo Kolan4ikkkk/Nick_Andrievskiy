@@ -6,7 +6,8 @@ L10_PATH = Path(__file__).parent
 # Finish the function. It should write the `content`
 # into the file located in `path`
 def write(path: Path, content: str):
-    pass
+     path.write_text(content)
+     print(path.write_text(content))
 
 
 # Do not modify the code below
