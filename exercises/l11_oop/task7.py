@@ -7,7 +7,11 @@ class Point:
         self.x = x
         self.y = y
 
-
+    def __add__(self, other):
+        if isinstance(other, Point):
+            print(self.x + other.x, self.y + other.y)
+            return Point(self.x + other.x, self.y + other.y)
+        return NotImplemented
 # Do not change the code below
 if __name__ == "__main__":
     p1 = Point(1, 1)
