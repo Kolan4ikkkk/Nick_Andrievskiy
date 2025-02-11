@@ -16,11 +16,16 @@ class Animal(ABC):
 #
 # HINT: Dog and Cat must inherit class Animal
 class Dog:
-    pass
+    def speak(self) -> str:
+        print("woof")
+        return "woof"
+
 
 
 class Cat:
-    pass
+    def speak(self) -> str:
+        print("meow")
+        return "meow"
 
 
 if __name__ == "__main__":
