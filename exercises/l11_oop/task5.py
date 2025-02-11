@@ -3,8 +3,10 @@
 #
 # HINT: research static methods
 class IntMath:
+    @staticmethod
 
     def pow(v: int, p: int) -> int:
+        print(v**p)
         return v**p
 
 
